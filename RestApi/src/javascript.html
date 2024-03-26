@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>javascript</title>
+
+</head>
+
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, praesentium! Facere, velit ipsam deserunt cum iure quod eius, fuga aliquid sit voluptatibus unde blanditiis eligendi quo officia quidem provident amet similique libero neque eum fugit possimus veniam. Magnam, soluta veritatis!</p>
+<script>
+    // arrays
+    var arr = [10,20,30,40,50];
+    document.write(arr[1],`<br>`);
+
+    var arr1 = [`excelr1`,`excelr2`,`excelr3`,`excelr4`,`excelr5`];
+    document.write(arr1[4],`<br>`);
+// for...of loop
+    var arr3 =[100,200,300,400,500];
+    for(var x of arr3){
+        document.write(x,`<br>`)
+    }
+
+    // forEach loop
+    var arr4=[10,20,30,40,50];
+    arr4.forEach((Element,index)=>{
+        document.write(Element, `<br>`)
+    })
+
+    //json arrays
+
+    var obj1={
+        "key1":"excelr",
+        "key2":"fullstack"
+    };
+
+    document.write(obj1.key1,obj1.key2,`<br>`)
+
+    var arrobj1=[{"id":1111,"name":"emp1","age":30,"image":"https://reqres.in/img/faces/7-image.jpg"},
+                 {"id":2222,"name":"emp1","age":32,"image":"https://reqres.in/img/faces/8-image.jpg"},
+                 {"id":3333,"name":"emp1","age":34,"image":"https://reqres.in/img/faces/1-image.jpg"},
+                 {"id":4444,"name":"emp1","age":36,"image":"https://reqres.in/img/faces/2-image.jpg"},
+                 {"id":5555,"name":"emp1","age":38,"image":"https://reqres.in/img/faces/3-image.jpg"}];
+
+                 document.write(`<table border="3"
+                                  align="center"
+                                  cellspacing="10px"
+                                  cellpadding="10px"
+                                 
+
+                                  <tr>
+                                    <td>id</td>
+                                    <td>name</td>
+                                    <td>age</td>
+                                    <td>image</td>
+                                    </tr>`);
+              arrobj1.forEach((Element,index)=>{
+                document.write(`<tr>
+                    <td>${Element.id}</td>
+                    <td>${Element.name}</td>
+                    <td>${Element.age}</td>
+                    <td>
+                        <img src=${Element.image} width="80px" height="70px">
+                    </td>
+                        </tr>`);
+                        
+                        
+              });   
+
+
+              
+
+              var arrobj2 =[{"p-id":111,"p-name":"p-one","p-cost":10000,"image":"https://reqres.in/img/faces/9-image.jpg"},
+                              {"p-id":222,"p-name":"p-two","p-cost":20000,"image":"https://reqres.in/img/faces/8-image.jpg"},
+                              {"p-id":333,"p-name":"p-three","p-cost":30000,"image":"https://reqres.in/img/faces/1-image.jpg"},
+                              {"p-id":444,"p-name":"p-four","p-cost":40000,"image":"https://reqres.in/img/faces/2-image.jpg"},
+                              {"p-id":555,"p-name":"p-five","p-cost":50000,"image":"https://reqres.in/img/faces/3-image.jpg"}];
+
+                              document.write(`<table boarder="5"
+                                              align="center"
+                                              cellspacing="10px"
+                                              cellpadding="10px">
+
+                                              <tr>
+                                                <td>p-id</td>
+                                                <td>p-name</td>
+                                                <td>p-cost</td>
+                                                <td>image</td>
+                                                </tr>`);
+
+                               arrobj2.forEach((element,index)=>{
+                                document.write(`<tr>
+                                             <td>${Element.p-id}</td>
+                                             <td>${Element.p-name}</td>
+                                             <td>${Element.p-cost}</td>
+                                             <td>
+                                                <img src=${Element.image} width="80px" height="70px">
+                                            </td>
+                                             </tr>`);
+
+
+                                    
+                               });            
+                              
+                 
+
+
+
+              
+              
+
+
+
+   
+</script>
+    </body>
+
+
+</html>

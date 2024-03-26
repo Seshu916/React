@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FUNCTIONS</title>
+    </head>
+    <body>
+        <script>
+            function func_one(){
+                document.write(`WELCOME TO FUNC DECLARATION`,`<br>`)
+            }
+            func_one();
+            func_one();
+            func_one();
+
+
+            let func_two=function(){
+                document.write(`WELCOME TO FUNC EXPRESSION`,`<br>`)
+            }
+            func_two();
+            func_two();
+            func_two();
+
+            let func_three=()=>{
+                document.write(`WELCOME TO ARROW EXPRESSION`,`<br>`)
+            }
+            func_three();
+            func_three();
+            func_three();
+
+            function demo_func(){
+                document.write(`welcome to fullstack`,`<br>`);
+
+            }
+            demo_func();
+
+            function func_four(parm1,param2,param3){
+                document.write(parm1,param2,param3);
+
+            }
+             func_four(10,20,30); // 10 20 30
+             func_four(`reactjs`,`springboot`,`mongodb`,`<br>`);
+             func_four();
+             func_four(undefined,`helo`);
+             func_four(null,null,null);
+
+             let func_1=function(param1,param2,param3){
+               document.write(param1,param2,param3);
+             }
+              func_1(10,20,30);
+
+              
+             let func_2=(param1,param2,param3)=>{
+               document.write(param1,param2,param3);
+             }
+              func_2(`reactjs`,`mongodb`,`spring`);
+
+              
+            function func_3(param1,param2,param3){
+               document.write(param1,param2,param3);
+             }
+              func_3(10,20,30);
+
+
+              let func_4=()=>{
+                return 100;
+              }
+                let res=func_4();
+                document.write(res);
+
+                let func_5=function(){
+                    return 500;
+                }
+                 let res1=func_5();
+                 document.write(res1);
+
+
+                 let func_6=(param4)=>{
+                    return param4*param4
+                 }
+                  let res2=func_6(100);
+                  document.write(res2,`<br>`);
+
+
+                  let func_7=()=>{
+                    return "sai krishna";
+                  }
+                  let res3= func_7();
+                  document.write(res3,`<br>`);
+
+
+                  function func_8(){
+                    return "java full stack"
+                  }
+                   let res4=func_8();
+                   document.write(res4,`<br>`);
+
+
+                   let func_9=(param5)=>{
+                    return `welcome to ${param5}`;
+                   }
+                    let res5=func_9(`excelr`);
+                    document.write(res5,`<br>`);
+
+                    let res6=func_9(`Java`);
+                    document.write(res6,`<br>`);
+
+                    function func_10(){
+                        return true;
+                    }
+                     let res7=func_10();
+                     res7?document.write(`java`):document.write(`reactjs` , `<br>`);
+
+                     let func_11=()=>{
+                        return false;
+                     }
+                      let res8=func_11();
+                      res8?document.write(`java`):document.write(`reactjs` ,`<br>`);
+
+                      function func_12(){
+                        return [10,20,30,40,50];
+                      }
+                       let arr=func_12();
+                       arr.forEach((Element,index)=>{
+                        document.write(Element);
+                       });
+
+                       //by using object
+
+                       let func_13=()=>{
+                        return{
+                            key1 : `java`,
+                            key2 : `react`,
+                            key3 : `nodejs`,
+                        };
+                       }
+                        let obj5=func_13();
+                        document.write(obj5.key1,obj5.key2,obj5.key3);
+
+
+        </script>
+    </body>
+</html>

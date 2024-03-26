@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>bootstarp table</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <script>
+
+            let func2 =()=>{
+
+                return [{"p_id":111,"p_name":"p_one","p_cost":10000},
+                        {"p_id":222,"p_name":"p_two","p_cost":20000},
+                        {"p_id":333,"p_name":"p_three","p_cost":30000},
+                        {"p_id":444,"p_name":"p_four","p_cost":40000},
+                        {"p_id":555,"p_name":"p_five","p_cost":50000}];
+            }
+              let arr=func2();
+              document.write(`<table class="table table_boardered">
+
+                <tr>
+                    <th>p_id</th>
+                    <th>p_name</th>
+                    <th>p_cost</th>
+                 </tr>
+                 `);
+                 arr.forEach((Element,index)=>{
+                    document.write(`<tr>
+                        <td>${Element.p_id}</td>
+                        <td>${Element.p_name}</td>
+                        <td>${Element.p_cost}</td>
+                        </tr>`);
+
+
+                        
+                 });
+
+                 document.write(`<table>`);
+
+                    let func3=(...param1)=>{
+                      document.write(param1);  
+                    }
+                    func3(10);
+                    func3(100,200,300,400,500);
+                    func3(undefined,undefined,undefined);
+
+
+                    let func4=(param1,param2="hello",...param3)=>{
+                         document.write(param1,param2,param3);     
+                    }
+                    func4(100,200,300);
+                    func4();
+                    func4(undefined,undefined,undefined);
+                    func4(null,null,null);
+
+
+                  let func5=()=>"excelr"
+                  let res=func5();
+                  document.write(res);
+
+                  let func6=(param4)=>param4*param4
+                  let res1=func6(100);
+                  document.write(res1);
+
+                  (()=>{
+                     document.write("welcome to IIFE")
+                  })()
+
+                 let res2= (()=>{
+                    return "excelr"
+
+                  })()
+                  document.write(res2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 
+
+        </script> 
+    </body>
+</html>
